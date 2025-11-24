@@ -1,0 +1,4 @@
+KL43 UI Polish:
+- Improved spacing and layout placeholder.
+- Add skeleton loaders next.
+- Add basic color coding for EV.

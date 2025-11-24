@@ -1,0 +1,4 @@
+{
+  "policy": "lockdown",
+  "notes": "Allowed scripts and deps must be audited manually."
+}

@@ -1,0 +1,13 @@
+{
+  "backend": [
+    "server.js",
+    "routes",
+    "controllers",
+    "utils"
+  ],
+  "frontend": [
+    "index.html",
+    "src",
+    "public"
+  ]
+}

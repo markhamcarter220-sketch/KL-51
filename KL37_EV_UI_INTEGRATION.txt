@@ -1,0 +1,4 @@
+KL37: EV→UI Integration Phase
+- Begin wiring real EV fields into BetCard
+- Prepare mock data mapping
+- Define EV display structure

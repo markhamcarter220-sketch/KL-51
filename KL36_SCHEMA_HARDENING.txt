@@ -1,0 +1,4 @@
+KL36: Schema Hardening + EV→UI integration phase.
+- Define strict EV schema
+- Add guards for undefined fields
+- Prep BetCard for real EV fields

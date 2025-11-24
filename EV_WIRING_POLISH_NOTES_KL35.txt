@@ -1,0 +1,3 @@
+KL35: EV wiring polish phase initiated.
+- Prepare for schema hardening
+- UI integration next

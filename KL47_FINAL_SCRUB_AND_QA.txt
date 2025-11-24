@@ -1,0 +1,6 @@
+KL47 Final Scrub + QA Phase:
+- Cleanup unused imports
+- Ensure no placeholder files remain
+- Validate transformOddsToEV safety
+- Validate filters and mapping functions
+- Prep for production deployment

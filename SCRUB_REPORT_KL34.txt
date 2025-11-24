@@ -1,0 +1,3 @@
+KL34 Scrub completed:
+- Removed obsolete server-old.js, server.py, requirements.txt if present.
+- Structure prepared for EV wiring polish.

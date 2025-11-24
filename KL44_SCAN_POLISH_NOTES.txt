@@ -1,0 +1,5 @@
+KL44 Scan Polish:
+- Scan loading state
+- Last updated timestamp
+- Error banner placeholder
+- Mobile scroll container
