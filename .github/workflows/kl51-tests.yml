@@ -1,0 +1,36 @@
+name: KL51 Check
+
+on:
+push:
+branches: [ main ]
+pull_request:
+branches: [ main ]
+
+jobs:
+kl51-tests:
+runs-on: ubuntu-latest
+
+steps:
+  - name: Checkout repo
+    uses: actions/checkout@v4
+
+  - name: Set up Node
+    uses: actions/setup-node@v4
+    with:
+      node-version: 20
+
+  - name: Install root dev dependencies
+    run: npm install
+
+  - name: Install backend deps
+    run: |
+      cd backend
+      npm install
+
+  - name: Install frontend deps
+    run: |
+      cd frontend
+      npm install
+
+  - name: Run structure + tests (KL51 gate)
+    run: npm run check
