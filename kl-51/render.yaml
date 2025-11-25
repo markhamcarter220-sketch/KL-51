@@ -1,0 +1,35 @@
+services:
+  - type: web
+    name: better-bets-kl51
+    env: node
+
+    # This should be the same directory where this render.yaml lives
+    rootDir: .
+
+    buildCommand: npm run install && npm run build
+    startCommand: npm run start
+
+    autoDeploy: true
+
+    envVars:
+      - key: NODE_ENV
+        value: production
+
+      # Comma-separated list of allowed origins for CORS
+      # Example: https://better-bets-kl51.onrender.com,https://your-marketing-site.com
+      - key: CORS_ORIGINS
+        value: https://better-bets-kl51.onrender.com
+
+      # Odds / internal API keys (replace with your real values in the Render dashboard)
+      - key: ODDS_API_KEY
+        sync: false
+      - key: BETTERBETS_API_KEY
+        sync: false
+
+      # Example database URL (uncomment + set in dashboard if you use a DB)
+      # - key: DATABASE_URL
+      #   sync: false
+
+      # Any other secrets your backend expects
+      # - key: JWT_SECRET
+      #   sync: false
