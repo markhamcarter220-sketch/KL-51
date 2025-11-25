@@ -2,7 +2,9 @@
   "name": "better-bets-monorepo",
   "version": "0.0.51",
   "private": true,
-  "scripts": {
+  "scripts": {    "install": "cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && node server.js",
     "test": "npm run test:backend && npm run test:frontend",
     "test:backend": "NODE_ENV=test jest tests/backend backend/tests",
     "test:frontend": "NODE_ENV=test jest tests/frontend",
